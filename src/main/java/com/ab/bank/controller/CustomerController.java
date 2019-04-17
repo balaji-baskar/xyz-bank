@@ -194,7 +194,7 @@ public class CustomerController {
 
 		// Find the sender with the id stored the customer id
 		Customer sender = customerService.findById(customerId);
-		try {
+		try {  //exception for invalid customer id
 
 		// Find the receiver with the given id from the JSP
 		receiver = customerService.findById(id);
